@@ -61,4 +61,12 @@ button:hover{
     max-height: 150px;
     border-radius: 50%;
     margin-top: 10px;
+
+}
+.imgdiv{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
