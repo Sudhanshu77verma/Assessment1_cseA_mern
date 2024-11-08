@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Builder</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Linking the style(css) file  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
@@ -28,7 +30,7 @@
           will be hidden and it can be done by using css and also it 
           can be done using js also by using classList.add or remove
            which can manipulate the css also  -->
-           
+
         <div id="resumePreview" class="resume-preview" style="display: none;">
             <div id="resumeContent">
                 <h2 id="displayName"></h2>
@@ -43,10 +45,11 @@
                 <p id="displayEducation"></p>
             </div> 
 
-            <!--  -->
+          
             <button onclick="downloadPDF()">Download as PDF</button>
         </div>
     </div>
+     <!--  javascript file linking -->
     <script src="index.js"></script>
 </body>
 </html>
