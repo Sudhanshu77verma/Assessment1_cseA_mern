@@ -18,10 +18,17 @@
             <input type="text" id="github" placeholder="GitHub Profile .." required>
             <textarea id="experience" placeholder="Work Experience..." required></textarea>
             <textarea id="education" placeholder="Education..." required></textarea>
-            <input type="file" id="photo" accept="image/*" required>
+            <input type="file" id="photo" accept="image/*" required> 
+             <!--  on clicking on this button it will generated the resume  and that generate handler is called by the js in index.js file -->
             <button type="button" onclick="generateResume()">Generate Resume</button>
         </form>
-        
+         
+         <!-- this is the output we get after 
+          generate Resume is called and on generating resuming UI it 
+          will be hidden and it can be done by using css and also it 
+          can be done using js also by using classList.add or remove
+           which can manipulate the css also  -->
+           
         <div id="resumePreview" class="resume-preview" style="display: none;">
             <div id="resumeContent">
                 <h2 id="displayName"></h2>
@@ -34,7 +41,9 @@
                 <p id="displayExperience"></p>
                 <h3>Education</h3>
                 <p id="displayEducation"></p>
-            </div>
+            </div> 
+
+            <!--  -->
             <button onclick="downloadPDF()">Download as PDF</button>
         </div>
     </div>

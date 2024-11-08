@@ -1,11 +1,13 @@
-function generateResume() {
+ 
+ function generateResume() {
     document.getElementById('displayName').innerText = document.getElementById('name').value;
     document.getElementById('displayEmail').innerText = document.getElementById('email').value;
     document.getElementById('displayPhone').innerText = document.getElementById('phone').value;
 
     const linkedinUrl = document.getElementById('linkedin').value;
     const githubUrl = document.getElementById('github').value;
-    
+      
+     // fetching all the required classses and 
     document.getElementById('displayLinkedIn').innerText = linkedinUrl;
     document.getElementById('displayLinkedIn').href = linkedinUrl;
     
@@ -14,9 +16,13 @@ function generateResume() {
 
     document.getElementById('displayExperience').innerText = document.getElementById('experience').value;
     document.getElementById('displayEducation').innerText = document.getElementById('education').value;
+    
+
+    // selecting only the first file 
 
     const fileInput = document.getElementById('photo');
     if (fileInput.files && fileInput.files[0]) {
+        
         const reader = new FileReader();
         reader.onload = function(e) {
             document.getElementById('displayPhoto').src = e.target.result;
@@ -27,6 +33,9 @@ function generateResume() {
     document.getElementById('resumeForm').style.display = 'none';
     document.getElementById('resumePreview').style.display = 'block';
 }
+ 
+
+ // create the download functionality
 
 function downloadPDF() {
     const element = document.getElementById('resumeContent');
